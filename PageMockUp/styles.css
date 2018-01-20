@@ -1,0 +1,231 @@
+/*CSS reset mini
+	http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   	License: none (public domain)****************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/*******************************************************
+/*handcrafted CSS starts here*/
+body{
+	background-color: #f1f1f1;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;/* went with slightly larger font size for readability*/
+    line-height: 1.4;
+}
+.pageContainer, .footerContainer {
+	width: 986px;
+	margin: auto;
+	padding: 10px 25px;
+}
+p {
+	color: #888;
+}
+h1{
+
+}
+h2 { 
+	font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+	font-size: 1.3em;
+	line-height: 1.2;
+	margin: 1.2em 0em;
+	text-transform: uppercase;
+	transform: scale(1, 1.4);
+}
+h3 {
+	font-weight: 700;
+	color: #000;
+	font-size: 0.8em;
+	margin: 1.2em 0em;
+}
+h4 {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 0.8em;
+}
+h5 {
+	background-color: #06c;
+	color:#fff;
+	font-weight: 700;
+	font-size: 1.3em;
+	padding: 0.2em 0em;
+	text-align: center;
+	text-transform: uppercase;
+}
+.blue {
+	color: #06c;
+}
+
+
+/*header styles*****************************/
+.mainHamburger, #headerLogo, .weatherWidget {
+	display: inline-block;
+    cursor: pointer;
+}
+.mainHamburger {
+	margin-bottom: 5px;
+}
+.bar1, .bar2, .bar3 {
+	width: 30px;
+    height: 4px;
+    background-color: black;
+    margin: 4px 0;
+    border-radius: 6px;
+}
+#headerLogo {
+	margin-left: 409px;
+}
+.logo {
+	max-height: 36px;
+}
+.weatherWidget {
+	margin-left: 98px;
+}
+.weatherWidget img {
+    max-height: 44px;
+    margin-bottom: -8px;
+    margin-left: 16%;
+}
+.secondaryDropDown {
+	display: inline-block;
+	font-size: 0.7em;
+	font-weight: 700;
+	margin-left: 50px;
+	cursor: pointer;
+}
+.marketChannels {
+	vertical-align: middle;
+    display: inline-block;
+    margin-top: -25px;
+}
+i {
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 17px;
+}
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+
+/*topStory*****************************/
+.heroStory {
+	margin-top: 6px;
+	margin-bottom: 10px;
+}
+.rightCard {
+    float: right;
+    width: 268px;    
+    height: 346px;
+    padding: 25px 25px 0 25px;
+    background-color: #fff;
+    border-top: 5px solid #034198;
+}
+.rightCard a {
+	color: #06c;
+	text-decoration: none;
+}
+.upperAd {
+	width: 548px;
+	margin: auto;
+}
+
+/*******flexbox*********/
+.flexMainContainer, .flexVideos{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 700px;
+}
+.latestStories, .rightColumnAds {
+	width: 222px;
+}
+.rightColumnAds {
+	float: right;
+}
+.featuredStories {
+	width: 448px;
+}
+.topVideos, .moreNews, .adverts {
+	width: 670px;
+}
+
+/*Main Container***********************/
+.mainContainer {
+	background-color: #fff;
+	border-top: 15px solid #e1e2e1;
+	padding: 30px 20px 5px 25px;
+}
+.sectionLabel {
+	width: 228px;
+	background-color: #06c;	
+}
+
+
+
+
+footer {
+	background-color: #333333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
