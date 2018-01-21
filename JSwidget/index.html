@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Supermercado+One" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheet.css">
+  <title>Jobs</title>
+  <script>
+    var request = new XMLHttpRequest();
+    request.onreadystatechange = function () {
+      if (request.readyState === 4 && request.status === 200) {
+        var data = request.responseText;
+        //if I try to parse this string I get Uncaught SyntaxError: Unexpected token d in JSON at position 147 error in console
+        var removeFront = data.substr(159);
+        //remove extra space and characters in the beginning of the retreived string
+        var removeLast = removeFront.slice(0,-1);
+        //removed last character from data string
+        //copied string retreived by running 
+        //console.log(removeLast);
+        //ran this output thru https://jsonlint.com and finally get valid JSON code
+        var jobData = JSON.parse(removeLast);
+        // check typeof 
+        // console.log(typeof jobData);
+        //finally get  object
+        console.log(jobData);
+
+          var objHTML = '<ul class="work">';
+              for (var i=0; i<5; i += 1) {
+                objHTML += '<li class="jbsCard">';
+                objHTML += jobData.RecruiterName;
+                objHTML += '</li>';
+                }
+            objHTML += '</ul >';
+            document.getElementById("jobsList").innerHTML = objHTML;
+        }
+      };
+
+        request.open("GET", "https://api.stagingjobshq.com/madgexWidgetJobs.php?callback=displayJobs&city=Moorhead&state=Minnesota");  
+        request.send();      
+  </script>
+</head>
+<body>
+
+  <div class="widgetcontainer">
+    <header class="container">
+      <div class="heading">
+        <h1>Bring on the Jobs</h1>
+      </div>
+    </header>
+
+      <div class="listContainer">
+        <div id="jobsList"></div>
+      </div>
+  </div>
+
+</body>
+</html>
