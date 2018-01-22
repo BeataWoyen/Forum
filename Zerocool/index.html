@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ZeroCool</title>
+	<link href="style.css" rel="stylesheet">
+	<script>
+		for (var num = 1; num<= 100; num++) {
+			if (num % 3 == 0 && num % 5 == 0) {
+				document.write('ZeroCool');
+			} else {
+				if (num % 3 == 0){
+					document.write('Zero');
+				}
+				if (num % 5 == 0){
+					document.write('Cool');	
+				}
+			}
+            document.write(num + ", ");   
+			}
+  	
+	</script>
+</head>
+<body>
+	
+	<div id="cool"></div>
+
+</body>
+</html>
+
+
+<!--  Zerocool Quiz
+Write a program that prints the numbers from 1 to
+ 100. But for
+multiples of three print "Zero" instead of the number
+ and for the
+multiples of five print "Cool". For numbers which
+ are multiples of
+both three and five print "ZeroCool" -->
