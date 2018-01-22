@@ -204,11 +204,17 @@ i {
 .featuredStories {
 	width: 448px;
 }
-.topVideos, .moreNews, .adverts {
+.topVideos, .moreNews, .ad{
 	width: 670px;
 }
-
-/*Main Container***********************/
+.latestStories h5 {
+	margin-bottom: 20px;
+}
+.topVideos h5, 
+.moreNews h5 {
+	margin: 20px auto;
+}
+/*Main Container*******************************/
 .mainContainer {
 	background-color: #fff;
 	border-top: 15px solid #e1e2e1;
@@ -221,6 +227,18 @@ i {
 }
 
 
+
+/*Secondary Container/ ad ************************/
+
+.secondaryContainer {
+	background-color: #fff;
+	border-top: 15px solid #e1e2e1;
+	margin-top: 20px;
+}
+.ad {
+		padding: 20px 0;
+		text-align: center;
+}
 
 
 footer {
