@@ -24,17 +24,17 @@
                 objHTML += jobData.Job[i].Title;
                 objHTML += '</li>';
 
-                objHTML += '<li class="jbsDesc">';
-                objHTML += jobData.Job[i].ShortDescription;
-                objHTML += '</li>';
-
                 objHTML += '<li class="jbsComp">';
                 objHTML += jobData.Job[i].RecruiterName;
                 objHTML += '</li>';
 
-                objHTML += '<li class="jbsUrl">Learn More<span>';
+                objHTML += '<li class="jbsDesc">';
+                objHTML += jobData.Job[i].ShortDescription;
+                objHTML += '...</li>';
+
+                objHTML += '<li class="jbsUrl"><a href=" ';
                 objHTML += jobData.Job[i].DetailsUrl;
-                objHTML += '</span></li>'; 
+                objHTML += '">Learn More</a></li>'; 
                 }
             objHTML += '</ul >';
 

@@ -62,26 +62,65 @@ body{
 	margin-top: 20px;
 }
 .container {
-	background-color: #6d7070;
+	background-color: #FA5000;
 	color: #fff;
-	height: 60px;
+	height: 45px;
 }
 .listContainer{
-	margin: 10px;
-	background-color: #fff
+	margin: 0px  10px 10px 10px;
+	background-color: #fff;
+	padding: 0 10px;
+	height: 547px;
+	overflow: hidden;
 }
 .heading {
-	padding: 16px;
+	padding: 10px;
 }
-h1{
+h1 {
 	font-family: 'Supermercado One', cursive;
 	text-align: center;
 	font-size: 27px;
 }
-.jbsCard {
+.jobsList {
 	height: 94px;
 	margin: 5px 15px;
 	padding-top: 5px;
 	border-bottom: 1px solid #ddd
 }
+li {
+	line-height: 1.2;
+	font-size: 14px;
+}
+.jbsTitle {
+	font-weight: bold;
+	padding-top: 8px;
+}
+.jbsComp{
+	color: #6d7070;
+}
+.jbsDesc{
+	font-size: 12px;
+}
+.jbsUrl{
+	padding: 0 0 0px 195px;
+	font-size: 11px;
+	margin-top: -3px;
+}
+a {
+	text-decoration: none;
+	color: #3FBFC7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
