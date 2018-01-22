@@ -1,0 +1,3 @@
+Still to do:
+- make it so that the number isn't printed when it has a replacement text
+	--just need to tweek the if statement so that the number is only printed if it falls thru all the conditional statements

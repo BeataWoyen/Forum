@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <link href="https://fonts.googleapis.com/css?family=Supermercado+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
   <link rel="stylesheet" href="stylesheet.css">
   <title>Jobs</title>
   <script>
@@ -12,8 +12,9 @@
       if (request.readyState === 4 && request.status === 200) {
         var str = request.responseText;
         console.log(typeof str); //get string
-        var info = str.slice(149,-1);
+        var info = str.slice(143,-1);
         //remove the spaces and characters from string that cause errors when validating on jsonlint.com
+        console.log(info);
         var jobData = JSON.parse(info);//parse
         console.log(typeof jobData);//now get object
         console.log(jobData);//have objects in an Array in console

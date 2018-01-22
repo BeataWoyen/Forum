@@ -77,9 +77,10 @@ body{
 	padding: 10px;
 }
 h1 {
-	font-family: 'Supermercado One', cursive;
+	font-family: 'Oleo Script', cursive;
 	text-align: center;
 	font-size: 27px;
+	letter-spacing: 1px;
 }
 .jobsList {
 	height: 94px;
