@@ -51,6 +51,7 @@ table {
 
 /*******************************************************
 /*handcrafted CSS starts here*/
+/* main CSS ****************/
 body{
 	background-color: #f1f1f1;
 	font-family: Helvetica, Arial, sans-serif;
@@ -89,7 +90,19 @@ h3 {
 }
 /*used for latest news& featured headlines*/
 h4 {
-	
+	font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+	font-size: 1.3em;
+	line-height: 1.2;
+	margin: 1.2em 0em;
+	text-transform: uppercase;
+	transform: scale(1, 1.4);
+}
+.latestStories h4 {
+	font-family: "Arial", Gadget, sans-serif;
+	font-size: 0.78em;
+	font-weight: 700;
+	text-transform: none;
+	padding-left: 20px;
 }
 /*used for section headings*/
 h5 {
@@ -101,15 +114,26 @@ h5 {
 	text-align: center;
 	text-transform: uppercase;
 }
+/*used for video caps & more news*/
 h6 {
+	font-family: "Arial", Gadget, sans-serif;
+	font-size: 1.2em;
+	font-weight: 700;
+	transform: scale(1, 1.4);
+	line-height: 1.1;
+	padding: 0.6em 0em 1.3em 0em;
 
 }
 .blue {
 	color: #06c;
 }
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 
-
-/*header styles*****************************/
+/* header styles *****************************/
 .mainHamburger, #headerLogo, .weatherWidget {
 	display: inline-block;
     cursor: pointer;
@@ -125,13 +149,13 @@ h6 {
     border-radius: 6px;
 }
 #headerLogo {
-	margin-left: 409px;
+	margin-left: 42%;
 }
 .logo {
 	max-height: 36px;
 }
 .weatherWidget {
-	margin-left: 98px;
+	margin-left: 10%;
 }
 .weatherWidget img {
     max-height: 44px;
@@ -142,7 +166,7 @@ h6 {
 	display: inline-block;
 	font-size: 0.7em;
 	font-weight: 700;
-	margin-left: 50px;
+	margin-left: 4%;;
 	cursor: pointer;
 }
 .marketChannels {
@@ -163,7 +187,7 @@ i {
 }
 
 
-/*topStory*****************************/
+/* topStory *****************************/
 .heroStory {
 	margin-top: 6px;
 	margin-bottom: 10px;
@@ -204,7 +228,7 @@ i {
 .featuredStories {
 	width: 448px;
 }
-.topVideos, .moreNews, .ad{
+.topVideos, .moreNews, .ad {
 	width: 670px;
 }
 .latestStories h5 {
@@ -214,7 +238,9 @@ i {
 .moreNews h5 {
 	margin: 20px auto;
 }
-/*Main Container*******************************/
+
+
+/* Main Container *******************************/
 .mainContainer {
 	background-color: #fff;
 	border-top: 15px solid #e1e2e1;
@@ -225,10 +251,40 @@ i {
 	width: 228px;
 	background-color: #06c;	
 }
+.featured {
+	margin-bottom: 20px;
+}
+.latest {
+	border-bottom: 2px solid #e1e2e1;
+	padding: 10px 10px 10px 0;
+}
+.latestStories img,
+.latest img {
+	float: left;
+	padding: 10px 10px 10px 0;
+}
+.latestFirst {
+	padding: 0 0 10px 0;
+}
+.latestFirst img {
+	float: none;
+	padding: 0;
+}
+.latestFirst h4 {
+	padding: 0;
+}
+.latestStories .latest:last-child {
+	border-bottom: none;
+}
+/* videos******************/
+.video h6 {
+	max-width: 333px;
+}
+/* more news section *******/
 
 
 
-/*Secondary Container/ ad ************************/
+/* Secondary Container/ ad ************************/
 
 .secondaryContainer {
 	background-color: #fff;
@@ -238,6 +294,9 @@ i {
 .ad {
 		padding: 20px 0;
 		text-align: center;
+}
+.lowerAd {
+	width: 986px;
 }
 
 
