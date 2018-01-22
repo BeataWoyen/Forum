@@ -8,29 +8,36 @@
   <script>
     var request = new XMLHttpRequest();
     request.onreadystatechange = function () {
+
       if (request.readyState === 4 && request.status === 200) {
-        var data = request.responseText;
-        //if I try to parse this string I get Uncaught SyntaxError: Unexpected token d in JSON at position 147 error in console
-        var removeFront = data.substr(159);
-        //remove extra space and characters in the beginning of the retreived string
-        var removeLast = removeFront.slice(0,-1);
-        //removed last character from data string
-        //copied string retreived by running 
-        //console.log(removeLast);
-        //ran this output thru https://jsonlint.com and finally get valid JSON code
-        var jobData = JSON.parse(removeLast);
-        // check typeof 
-        // console.log(typeof jobData);
-        //finally get  object
-        console.log(jobData);
+        var str = request.responseText;
+        console.log(typeof str); //get string
+        var info = str.slice(149,-1);
+        //remove the spaces and characters from string that cause errors when validating on jsonlint.com
+        var jobData = JSON.parse(info);//parse
+        console.log(typeof jobData);//now get object
+        console.log(jobData);//have objects in an Array in console
 
           var objHTML = '<ul class="work">';
               for (var i=0; i<5; i += 1) {
-                objHTML += '<li class="jbsCard">';
-                objHTML += jobData.RecruiterName;
+                objHTML += '<li class="jbsTitle">';
+                objHTML += jobData.Job[i].Title;
                 objHTML += '</li>';
+
+                objHTML += '<li class="jbsDesc">';
+                objHTML += jobData.Job[i].ShortDescription;
+                objHTML += '</li>';
+
+                objHTML += '<li class="jbsComp">';
+                objHTML += jobData.Job[i].RecruiterName;
+                objHTML += '</li>';
+
+                objHTML += '<li class="jbsUrl">Learn More<span>';
+                objHTML += jobData.Job[i].DetailsUrl;
+                objHTML += '</span></li>'; 
                 }
             objHTML += '</ul >';
+
             document.getElementById("jobsList").innerHTML = objHTML;
         }
       };
