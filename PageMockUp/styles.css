@@ -281,7 +281,9 @@ i {
 	max-width: 333px;
 }
 /* more news section *******/
-
+.latest h6 {
+	padding-top: 10px;
+}
 
 
 /* Secondary Container/ ad ************************/

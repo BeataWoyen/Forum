@@ -11,13 +11,12 @@
 
       if (request.readyState === 4 && request.status === 200) {
         var str = request.responseText;
-        console.log(typeof str); //get string
-        var info = str.slice(143,-1);
-        //remove the spaces and characters from string that cause errors when validating on jsonlint.com
-        console.log(info);
-        var jobData = JSON.parse(info);//parse
-        console.log(typeof jobData);//now get object
-        console.log(jobData);//have objects in an Array in console
+     
+        //remove the callback from string that cause errors when validating on jsonlint.com
+        var inf = str.replace("displayJobs\(", "");
+        var info = inf.slice(0, -1);
+
+        var jobData = JSON.parse(info); 
 
           var objHTML = '<ul class="work">';
               for (var i=0; i<5; i += 1) {
