@@ -2,7 +2,9 @@
 	http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    	License: none (public domain)****************/
-
+* {
+	box-sizing: border-box;
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -52,14 +54,14 @@ table {
 /*******************************************************
 /*handcrafted CSS starts here*/
 /* main CSS ****************/
-body{
+body {
 	background-color: #f1f1f1;
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 14px;/* went with slightly larger font size for readability*/
     line-height: 1.4;
 }
 .pageContainer, .footerContainer {
-	width: 986px;
+	width: 1035px;
 	margin: auto;
 	padding: 10px 25px;
 }
@@ -202,8 +204,8 @@ i {
 }
 .rightCard {
     float: right;
-    width: 268px;    
-    height: 346px;
+    max-width: 317px;    
+    height: 375px;
     padding: 25px 25px 0 25px;
     background-color: #fff;
     border-top: 5px solid #034198;
@@ -253,7 +255,7 @@ i {
 	background-color: #fff;
 	border-top: 15px solid #e1e2e1;
 	padding: 30px 20px 5px 25px;
-	height: 2744px;
+	height: 2790px;
 }
 .sectionLabel {
 	width: 228px;
@@ -321,6 +323,7 @@ i {
 	background-color: #fff;
 	border-top: 15px solid #e1e2e1;
 	margin-top: 20px;
+	    margin-bottom: -10px;
 }
 .ad {
 		padding: 20px 0;
@@ -334,6 +337,10 @@ i {
 footer {
 	background-color: #000;
 	padding: 0 56px;
+}
+.footerContainer {
+	padding: 10px 23px;
+    max-width: 960px;
 }
 .footerNav, .footerList h4,
 .socialNetworks h4,
@@ -391,6 +398,60 @@ footer {
 
 /* media query for phones***************************/
 @media only screen and (max-width: 700px) {
+	
+body {
+	bottom: background-color: #fff;
+}	
+.pageContainer, .footerContainer {
+	width: 320px;
+	margin: auto;
+	padding: 10px 10px;
+}
+
+img {
+	max-width: 320px;
+}
+
+.topVideos, .moreNews, .ad,
+.featuredStories {
+    width: 320px;
+}
+.flexMainContainer, .flexVideos {
+    width: 266px;
+}
+.rightColumnAds,
+.secondaryDropDown,
+.moreNews {
+	display: none;
+}
+
+/*header*/
+#headerLogo {
+    margin-left: 21%;
+}
+.weatherWidget {
+    margin-left: -12%;
+}
+.weatherWidget img {
+    max-height: 37px;
+    margin-bottom: -8px;
+    margin-left: 44%;
+} 
+/*hero area*/
+.rightCard {
+    float: none;
+    width: 320px;
+    height: 100%;
+    padding: 5%;
+    background-color: #fff;
+    border-top: 5px solid #034198;
+    margin-top: -6px;
+}
+.mainContainer {
+	border-top: none;
+	height: 100%;
+}
+
 
 }
 
