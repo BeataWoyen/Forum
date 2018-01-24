@@ -400,7 +400,7 @@ footer {
     margin: 0px 10px -4px 10px;
 }
 
-/* media query for phones***************************/
+/***********  media query for phones   ***************************/
 @media only screen and (max-width: 700px) {
 	
 body {
@@ -408,8 +408,8 @@ body {
 }
 .pageContainer, .footerContainer {
 	width: 320px;
-	margin: 0 3%;
-	padding: 10px 10px;
+	margin: auto;
+	padding: 0;
 }
 
 img {
@@ -423,10 +423,6 @@ img {
 .flexVideos,.latestStories {
     width: 320px;
 }
-/*.flexMainContainer, .flexVideos
- {
-    width: 266px;
-}*/
 .rightColumnAds,
 .secondaryDropDown,
 .moreNews {
@@ -480,6 +476,9 @@ img {
 .ad {
 	order: 3;
 }
+.midAd {
+	margin-top: 5%;
+}
 .topVideos .sectionLabel,
 .latestStories .sectionLabel {
     margin: 0 auto;
@@ -501,16 +500,21 @@ img {
     margin-bottom: -22px;
 }
 /*footer area*/
-.footerContainer {
-	max-width: 255px;
+.footerNav {
+	max-width: 233px;
+	margin: 0 6%;
+}
 }
 
-
+/**********  media query for tablets   ***************************/
+@media only screen and (min-width: 700px) {
+.pageContainer, .footerContainer {
+	width: 720px;
+	margin: auto;
+	padding: 0;
 }
 
-
-
-
+}
 
 
 
