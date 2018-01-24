@@ -60,7 +60,7 @@ body {
 	font-size: 14px;/* went with slightly larger font size for readability*/
     line-height: 1.4;
 }
-.pageContainer, .footerContainer {
+.pageContainer {
 	width: 1035px;
 	margin: auto;
 	padding: 10px 25px;
@@ -336,11 +336,12 @@ i {
 /* footer *****************************************/
 footer {
 	background-color: #000;
-	padding: 0 56px;
+	padding: 10px 25px;
 }
 .footerContainer {
-	padding: 10px 23px;
-    max-width: 960px;
+	padding: 10px 45px;
+    max-width: 1035px;
+    margin: auto;
 }
 .footerNav, .footerList h4,
 .socialNetworks h4,
@@ -365,6 +366,9 @@ footer {
 	font-family: "Arial Bold", Gadget, sans-serif;
     font-size: 1.0em;
     transform: none;
+}
+.socialNetworks h4{
+	margin-bottom: -0.1em;
 }
 .copyWrite p,
 .footerList li,
@@ -400,25 +404,29 @@ footer {
 @media only screen and (max-width: 700px) {
 	
 body {
-	bottom: background-color: #fff;
-}	
+	background-color: #fff;
+}
 .pageContainer, .footerContainer {
 	width: 320px;
-	margin: auto;
+	margin: 0 3%;
 	padding: 10px 10px;
 }
 
 img {
-	max-width: 320px;
+	width: 100%;
+    height: auto;
 }
 
 .topVideos, .moreNews, .ad,
-.featuredStories {
+.featuredStories, .topStory,
+.mainContainer, .flexMainContainer,
+.flexVideos,.latestStories {
     width: 320px;
 }
-.flexMainContainer, .flexVideos {
+/*.flexMainContainer, .flexVideos
+ {
     width: 266px;
-}
+}*/
 .rightColumnAds,
 .secondaryDropDown,
 .moreNews {
@@ -432,10 +440,13 @@ img {
 .weatherWidget {
     margin-left: -12%;
 }
+#headerLogo img {
+	width: 130px;
+}
 .weatherWidget img {
-    max-height: 37px;
-    margin-bottom: -8px;
-    margin-left: 44%;
+    width: 102px;
+    margin-bottom: 0px;
+    margin-left: 28%;
 } 
 /*hero area*/
 .rightCard {
@@ -450,6 +461,48 @@ img {
 .mainContainer {
 	border-top: none;
 	height: 100%;
+	padding: 0;
+}
+.ad {
+	padding: 0%;
+	margin: -4% 0 12% 0;
+}
+/* flexbox rearange categories*/
+.latestStories {
+	order: 4;
+}
+.featuredStories {
+	order: 1;
+}
+.topVideos {
+	order: 2;
+}
+.ad {
+	order: 3;
+}
+.topVideos .sectionLabel,
+.latestStories .sectionLabel {
+    margin: 0 auto;
+}
+.featured h4, .featured h3,
+.featured p {
+	margin: 1.2em 0.5em;
+}
+.latest img {
+	padding: 0;
+	width: 40%;
+}
+.latestStories .latestFirst img {
+	width: 100%;
+}
+.secondaryContainer {
+	border-top: none;
+	margin-top: 42px;
+    margin-bottom: -22px;
+}
+/*footer area*/
+.footerContainer {
+	max-width: 255px;
 }
 
 
