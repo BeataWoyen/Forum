@@ -103,6 +103,7 @@ h4 {
 	font-weight: 700;
 	text-transform: none;
 	padding-left: 20px;
+	margin: 1.7em 0em;
 }
 /*used for section headings*/
 h5 {
@@ -185,7 +186,14 @@ i {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
 }
-
+.right {
+	border: solid #06c;
+	transform: rotate(315deg);
+    -webkit-transform: rotate(315deg);
+    border-width: 0 2px 2px 0;
+    border-width: 0 2px 2px 0;
+    margin-left: 2px;
+}
 
 /* topStory *****************************/
 .heroStory {
@@ -273,18 +281,39 @@ i {
 .latestFirst h4 {
 	padding: 0;
 }
-.latestStories .latest:last-child {
+.latestStories .latest:last-child,
+.moreNews .latest:last-child {
 	border-bottom: none;
 }
 /* videos******************/
 .video h6 {
 	max-width: 333px;
 }
+.topVideos .sectionLabel {
+	margin:0 36%;
+}
 /* more news section *******/
 .latest h6 {
-	padding-top: 10px;
+	padding-top: 25px;
 }
-
+.latest img {
+	margin: 2% 2% 2% 0%;
+}
+.latest p {
+	font-size: 0.85em;
+}
+.vertLine {
+	display: inline-block;
+	height: 20px;
+    border-right: 2px solid #e1e2e1;
+    margin: 10px 10px -7px 10px;
+}
+.moreNews h3 {
+	margin-top: -1px;
+}
+.moreNews .sectionLabel {
+	margin:0 40%;
+}
 
 /* Secondary Container/ ad ************************/
 
@@ -301,15 +330,69 @@ i {
 	width: 986px;
 }
 
-
+/* footer *****************************************/
 footer {
-	background-color: #333333;
+	background-color: #000;
+	padding: 0 56px;
+}
+.footerNav, .footerList h4,
+.socialNetworks h4,
+.copyWrite,
+.copyWrite a,
+.copyWrite p,
+.socialList {
+	color: #fff;
+}
+.footerList,
+.socialList {
+	display: inline-block;
+}
+.footerNav {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	max-width: 750px;
+}
+.footerNav h4,
+.socialNetworks h4 {
+	font-family: "Arial Bold", Gadget, sans-serif;
+    font-size: 1.0em;
+    transform: none;
+}
+.copyWrite p,
+.footerList li,
+.streetAddress,
+.cityAddress,
+.phoneNumb {
+	font-size: 0.6em;
+	line-height: 2.2;
+}
+.socialList {
+	font-size: 0.5em;
+	margin: 10px 17px 8px 0px;
+	text-align: center;
+}
+.streetAddress,
+.cityAddress,
+.phoneNumb {
+	display: inline-block;
+}
+.copyWrite {
+	text-align: center;
+}
+.copyWrite a {
+	text-decoration: none;
+}
+.copyWrite .vertLine {
+	height: 15px;
+    border-right: 1px solid #353535;
+    margin: 0px 10px -4px 10px;
 }
 
+/* media query for phones***************************/
+@media only screen and (max-width: 700px) {
 
-
-
-
+}
 
 
 
