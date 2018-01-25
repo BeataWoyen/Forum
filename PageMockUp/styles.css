@@ -400,16 +400,15 @@ footer {
     margin: 0px 10px -4px 10px;
 }
 
-/***********  media query for phones   ***************************/
-@media only screen and (max-width: 700px) {
+/***********  media query for tablets   ***************************/
+@media only screen and (max-width: 800px) {
 	
 body {
 	background-color: #fff;
 }
 .pageContainer, .footerContainer {
-	width: 320px;
-	margin: auto;
-	padding: 0;
+	width: 750px;
+	padding: 2%;
 }
 
 img {
@@ -417,24 +416,21 @@ img {
     height: auto;
 }
 
-.topVideos, .moreNews, .ad,
-.featuredStories, .topStory,
+/*.topVideos, .moreNews, 
+.featuredStories, 
 .mainContainer, .flexMainContainer,
 .flexVideos,.latestStories {
-    width: 320px;
-}
-.rightColumnAds,
-.secondaryDropDown,
-.moreNews {
-	display: none;
+    width: 500px;
+}*/
+
+.upperAd, .mainContainer,
+.topStory {
+	width: 720px;
 }
 
 /*header*/
 #headerLogo {
-    margin-left: 21%;
-}
-.weatherWidget {
-    margin-left: -12%;
+    margin-left: 20%;
 }
 #headerLogo img {
 	width: 130px;
@@ -442,30 +438,177 @@ img {
 .weatherWidget img {
     width: 102px;
     margin-bottom: 0px;
+    margin-left: -33%;
+} 
+.weatherWidget {
+    margin-left: 24%;
+}
+.secondaryDropDown {
+	margin-left: -3%;
+}
+/*hero area*/
+.heroStory img {
+	width: 423px;
+	height: 300px;
+	object-fit: cover;
+}
+.rightCard {
+    width: 296px;
+    height: 100%;
+    padding: 3%;
+    background-color: #fff;
+    border-top: 5px solid #034198;
+}
+/*main articles area*/
+.mainContainer {
+	border-top: none;
+	height: 100%;
+	padding: 0;
+	width: 719px;
+}
+.ad {
+	padding: 0%;
+	margin: 0;
+}
+.upperAd img {
+	width: 548px;
+	margin: 0 0 2% 0;
+}
+.rightColumnAds {
+    width: 216px;
+}
+.latestStories {
+	width: 180px;
+}
+.latestStories h4 {
+	font-size: 0.68em;
+	padding: 0;
+	margin: 1.1em 0em;
+}
+.midAd {
+	margin-top: 5%;
+	width: 592px;
+}
+.flexMainContainer, .videos
+.flexVideos {
+	width: 493px;
+}
+.featuredStories {
+    width: 300px;
+}
+.sectionLabel {
+	width: 180px;
+}
+.video {
+	width: 240px;
+}
+.topVideos .sectionLabel,
+.latestStories .sectionLabel {
+    margin: 0 auto -2% auto;
+}
+.featured h4, .featured h3,
+.featured p {
+	margin: 1.2em 0.5em;
+}
+.latestFirst {
+    margin-top: -5%;
+}
+.moreNews .sectionLabel {
+    margin: 0 0 -4% 31%;
+}
+.latest img {
+	padding: 0;
+	width: 37%;
+	margin: 2% 5% 8% 0%;
+}
+.latestStories .latestFirst img {
+	width: 100%;
+}
+.latest h6 {
+	padding-top: 4%;
+	font-size: 1.0em;
+}
+.secondaryContainer {
+	border-top: none;
+	margin-top: 42px;
+    margin-bottom: -22px;
+    margin-bottom: -12px;
+    width: 719px;
+}
+.secondaryContainer img {
+	width: 500px;
+}
+/*footer area*/
+.footerNav {
+	max-width: 500px;
+	margin: 0 0 0 10%;
+}
+.lowerAd{
+	width:719px;
+}
+}
+
+/**********  media query for phones   ***************************/
+@media only screen and (max-width: 500px) {
+
+.pageContainer {
+	width: 320px;
+	margin: auto;
+	padding: 0;
+}
+.topVideos, .moreNews, .ad,
+.featuredStories, .topStory,
+.mainContainer,  .videos
+.flexVideos, .flexMainContainer,
+.latestStories {
+    width: 320px;
+}
+.rightColumnAds,
+.secondaryDropDown,
+.moreNews {
+	display: none;
+}
+/*header*/
+header {
+	margin-top: 2%;
+}
+#headerLogo {
+    margin-left: 18%;
+}
+.weatherWidget {
+    margin-left: -5%;
+}
+#headerLogo img {
+	width: 110px;
+}
+.weatherWidget img {
+    width: 102px;
+    margin-bottom: 0px;
     margin-left: 28%;
 } 
 /*hero area*/
-.rightCard {
-    float: none;
+.heroStory img {
     width: 320px;
-    height: 100%;
-    padding: 5%;
-    background-color: #fff;
-    border-top: 5px solid #034198;
-    margin-top: -6px;
+    height: auto;
+}
+.rightCard {
+    width: 320px;
+    padding: 4%;
+    margin: -5px 2px;
 }
 .mainContainer {
 	border-top: none;
 	height: 100%;
 	padding: 0;
 }
-.ad {
-	padding: 0%;
-	margin: -4% 0 12% 0;
+.upperAd img {
+	width: 320px;
+	margin: 2% 0 5% 0;
 }
 /* flexbox rearange categories*/
 .latestStories {
 	order: 4;
+	height: 875px;
 }
 .featuredStories {
 	order: 1;
@@ -473,11 +616,16 @@ img {
 .topVideos {
 	order: 2;
 }
-.ad {
-	order: 3;
-}
 .midAd {
-	margin-top: 5%;
+	order: 3;
+	margin: 6% 0;
+}
+.video {
+	width: 320px;
+}
+.video h6 {
+	width: 320px;
+	padding: 5% 2%;
 }
 .topVideos .sectionLabel,
 .latestStories .sectionLabel {
@@ -489,35 +637,66 @@ img {
 }
 .latest img {
 	padding: 0;
-	width: 40%;
+	width: 30%;
+	margin: 1% 5% 1% 3%;
 }
 .latestStories .latestFirst img {
 	width: 100%;
 }
+.latestFirst img {
+	margin: 2% 0% 0% 0%;
+}
+.latestStories h4 {
+	font-size: 0.8em;
+	margin: 1.1em 2.8em;
+}
+.latestStories h4 {
+	margin-top: 16px;
+}
 .secondaryContainer {
 	border-top: none;
-	margin-top: 42px;
-    margin-bottom: -22px;
+	margin-top: 18%;
+	width: 320px;
+    margin-bottom: 2px;
+}
+.lowerAd img {
+	width: 280px;
 }
 /*footer area*/
+.footerContainer {
+	width:275px;
+}
 .footerNav {
 	max-width: 233px;
-	margin: 0 6%;
+	margin: 0 6% 0 0;
+	height: 280px;
+}
+.copyWrite, hr {
+    text-align: center;
+    width: 288px;
+    margin-left: -5%;
 }
 }
-
-/**********  media query for tablets   ***************************/
-@media only screen and (min-width: 700px) {
-.pageContainer, .footerContainer {
-	width: 720px;
-	margin: auto;
-	padding: 0;
+/*for iPhone 5s - minor header tweek*/
+@media only screen and (max-width: 320px) {
+.mainHamburger {
+    margin-left: 2%;
 }
-
+#headerLogo {
+    margin-left: 15%;
 }
-
-
-
+.weatherWidget {
+    margin-left: -6%;
+}
+#headerLogo img {
+	width: 110px;
+}
+.weatherWidget img {
+    width: 102px;
+    margin-bottom: 0px;
+    margin-left: 28%;
+} 
+}
 
 
 
